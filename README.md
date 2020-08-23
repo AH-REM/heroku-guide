@@ -9,7 +9,7 @@
 Vous avez développé un bot discord et maintenant vous souhaitez le mettre en production ? <br />
 Mais vous ne savez pas où l'héberger gratuitement ?
 
-Ce guide est donc la solution à votre problème !
+Ce guide est donc la solution à votre problème ! :innocent:
 Suivez-le correctement, étape par étape et vous aurez un bot en ligne 24/7.
 
 ## Sommaire
@@ -35,7 +35,7 @@ Suivez-le correctement, étape par étape et vous aurez un bot en ligne 24/7.
 
 Afin de suivre ce guide, vous devez avoir :
 
-- un bot discord :)
+- un bot discord :sunglasses:
 - un compte [GitHub](https://github.com/)
 - un compte [Heroku](https://www.heroku.com/)
 
@@ -55,6 +55,7 @@ client.login(process.env.BOT_TOKEN);
 ```
 
 <br />
+
 ### Vérifier package.json
 
 Si vous n'avez pas encore le fichier `package.json` dans votre projet NodeJs, il faut l'initier. <br />
@@ -86,6 +87,7 @@ Ensuite vérifier dans celui-ci que vous avez bien les bonnes dépendances néce
 Fichier `package.json` du bot [Paillasson](https://github.com/AH-REM/Paillasson).
 
 <br />
+
 ### Créer Procfile
 
 Créer un fichier avec le nom *Procfile* sans extension et ajoutez y la ligne ci-dessous. <br />
@@ -98,6 +100,7 @@ Worker: node index.js
 ```
 
 <br />
+
 ### Importer les fichiers
 
 Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
@@ -107,6 +110,7 @@ Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
 > Note: N'importez pas le fichier `package-lock.json` et le dossier `node_modules` sur GitHub.
 
 <br />
+
 ## Héberger sur Heroku
 
 Pour commencer créer une [nouvelle application](https://dashboard.heroku.com/new-app) pour héberger votre bot.
@@ -123,13 +127,12 @@ Dans la section *Deploy*, plusieurs méthodes sont disponibles pour déployer vo
 
 Connectez-vous à [GitHub](https://github.com/) et choisissez votre projet.
 
-![screenshot](./images/connect-to-github-heroku.png)
-
 Après, appuyez sur le bouton `Enable Automatic Deploys`, ainsi à chaque fois que votre projet sera modifié sur GitHub, il le sera aussi sur Heroku et le bot redémarra automatiquement.
 
 > Note: Si vous voulez faire le déploiement manuellement à chaque modification, vous pouvez le faire en bas de page.
 
 <br />
+
 ### Ajouter le token
 
 Rendez-vous dans *Settings*, au niveau des configurations de variables et ajoutez en une nouvelle, `BOT_TOKEN` avec en paramètre le token de votre bot.
@@ -147,11 +150,15 @@ Vous pouvez ainsi l'éteindre en désactivant celui-ci.
 
 Vous pouvez accéder aux logs du bot en appuyant sur le bouton *More* en haut à droite et *View logs*.
 
-![screenshot](./images/button-logs-heroku.png)
+<div align="center">
+    <p>
+        <img src="./images/button-logs-heroku.png" alt="screenshot" />
+    </p>
+</div>
 
 ## Conclusion
 
-Votre bot est maintenant **opérationnel** !
+Votre bot est maintenant **opérationnel** ! :tada::tada:
 
 ![screenshot](./images/bot-connected.png)
 
