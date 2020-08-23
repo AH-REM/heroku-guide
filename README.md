@@ -6,11 +6,11 @@
 
 ## Introduction
 
-Vous avez développer un bot discord et maintenant vous voulez le mettre en production ? <br />
+Vous avez développer un bot discord et maintenant vous souhaitez le mettre en production ? <br />
 Mais vous ne savez pas où l'héberger gratuitement ?
 
 Ce guide est donc la solution à votre problème !
-Suivez-le correctement, étape par étape et vous aurez un bot en ligne en continu.
+Suivez-le correctement, étape par étape et vous aurez un bot en ligne 24/7.
 
 ## Sommaire
 
@@ -54,6 +54,7 @@ Changer donc l'argument de la méthode `login()` par `BOT_TOKEN`.
 client.login(process.env.BOT_TOKEN);
 ```
 
+
 ### Vérifier package.json
 
 Si vous n'avez pas encore le fichier `package.json` dans votre projet NodeJs, il faut l'initier. </br >
@@ -84,6 +85,7 @@ Ensuite vérifier dans celui-ci que vous avez bien les bonnes dépendances néce
 
 Fichier `package.json` du bot [Paillasson](https://github.com/AH-REM/Paillasson).
 
+
 ### Créer Procfile
 
 Créer un fichier avec le nom *Procfile* sans extension et ajouter y la ligne ci-dessous. </br >
@@ -95,6 +97,7 @@ Si votre fichier principal n'est pas `index.js` changer le nom.
 Worker: node index.js
 ```
 
+
 ### Importer les fichiers
 
 Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
@@ -102,6 +105,7 @@ Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
 ![screenshot](./images/upload-files-github.png)
 
 > Note: N'importez pas le fichier `package-lock.json` et le dossier `node_modules` sur GitHub.
+
 
 ## Héberger sur Heroku
 
@@ -124,6 +128,7 @@ Connecter vous à [GitHub](https://github.com/) et choisissez votre projet.
 Après, appuyer sur le bouton `Enable Automatic Deploys`, ainsi à chaque fois que votre projet sera modifier sur GitHub, il le sera aussi sur Heroku et le bot redémarra automatiquement.
 
 > Note: Si vous voulez faire le déploiement manuellement à chaque modification, vous pouvez le faire en bas de page.
+
 
 ### Ajouter le token
 
