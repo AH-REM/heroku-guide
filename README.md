@@ -9,7 +9,7 @@
 Vous avez développé un bot discord et maintenant vous souhaitez le mettre en production ? <br />
 Mais vous ne savez pas où l'héberger gratuitement ?
 
-Ce guide est donc la solution à votre problème ! :innocent:
+Ce guide est donc la solution à votre problème ! <br />
 Suivez-le correctement, étape par étape et vous aurez un bot en ligne 24/7.
 
 ## Sommaire
@@ -35,7 +35,7 @@ Suivez-le correctement, étape par étape et vous aurez un bot en ligne 24/7.
 
 Afin de suivre ce guide, vous devez avoir :
 
-- un bot discord :sunglasses:
+- un bot discord
 - un compte [GitHub](https://github.com/)
 - un compte [Heroku](https://www.heroku.com/)
 
@@ -53,8 +53,6 @@ Changez donc l'argument de la méthode `login()` par `BOT_TOKEN`.
 ```js
 client.login(process.env.BOT_TOKEN);
 ```
-
-<br />
 
 ### Vérifier package.json
 
@@ -86,8 +84,6 @@ Ensuite vérifier dans celui-ci que vous avez bien les bonnes dépendances néce
 
 Fichier `package.json` du bot [Paillasson](https://github.com/AH-REM/Paillasson).
 
-<br />
-
 ### Créer Procfile
 
 Créer un fichier avec le nom *Procfile* sans extension et ajoutez y la ligne ci-dessous. <br />
@@ -99,8 +95,6 @@ Si votre fichier principal n'est pas `index.js` changez le nom.
 Worker: node index.js
 ```
 
-<br />
-
 ### Importer les fichiers
 
 Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
@@ -108,8 +102,6 @@ Vous pouvez donc maintenant ajouter tous vos fichiers du bot dans le dépôt.
 ![screenshot](./images/upload-files-github.png)
 
 > Note: N'importez pas le fichier `package-lock.json` et le dossier `node_modules` sur GitHub.
-
-<br />
 
 ## Héberger sur Heroku
 
@@ -130,8 +122,6 @@ Connectez-vous à [GitHub](https://github.com/) et choisissez votre projet.
 Après, appuyez sur le bouton `Enable Automatic Deploys`, ainsi à chaque fois que votre projet sera modifié sur GitHub, il le sera aussi sur Heroku et le bot redémarra automatiquement.
 
 > Note: Si vous voulez faire le déploiement manuellement à chaque modification, vous pouvez le faire en bas de page.
-
-<br />
 
 ### Ajouter le token
 
